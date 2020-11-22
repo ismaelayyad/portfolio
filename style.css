@@ -1,0 +1,470 @@
+*{
+    font-family:Helvetica, sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+}
+.dark{
+    background: #212121;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    min-height: 700px;
+}
+.green{
+    background: #0d7377;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.padding1{
+    padding: 35px 0;
+}
+.padding-l{padding-left: 25px;}
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #222831;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+nav ul li {
+display: inline-block;
+color: #fff;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 30px 10px 30px ;
+    margin: 0 90px 0 0;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: #32e0c4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.last-item{
+    margin: 0;
+}
+svg.bi.bi-house {
+    display: inline-block;
+    margin: 0 5px -1px 0;
+}
+svg.bi.bi-person {
+    display: inline-block;
+    margin: 0 5px -1px 0;
+}
+svg.bi.bi-code-slash {
+    display: inline-block;
+    margin: 0 5px -2px 0;
+}
+svg.bi.bi-card-image {
+    display: inline-block;
+    margin: 0 5px -2px 0;
+}
+.home-bg{
+    height: 100vh;
+    background-image: url(img/bg1.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 700px;
+}
+.content-warp{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.home-content{
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    top: 40%
+}
+.hello {
+    font-size: 90px;
+}
+.my-name {
+    font-size: 75px;
+    margin: 30px 0;
+}
+.carer {
+    font-size: 35px;
+}
+.carer:after{
+    content: '';
+    width: 50px;
+    height: 10px;
+    background: #32e0c4;
+    position: absolute;
+    margin: 16px 0 0 25px
+}
+.carer:before{
+    content: '';
+    width: 50px;
+    height: 10px;
+    background: #32e0c4;
+    position: absolute;
+    margin: 16px 0 0 -75px
+}
+.more-me-button {
+    font-size: 26px;
+    padding: 15px 25px;
+    background: #32e0c4;
+    max-width: 310px;
+    margin: 30px auto 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.more-me-button:hover{
+    background: #0d7377;
+}
+.aboout-link{
+    padding: 15px 25px;
+    font-weight: bold;
+}
+svg.bi.bi-arrow-down {
+    margin: 0 0 -3px 0;
+}
+.social{
+    list-style: none;
+    position: fixed;
+    margin: 50vh 0 0 5%;
+    z-index: 999;
+    font-size: 24px;
+}
+.social li.beh:after,.social li.fb:after {
+    content: "";
+    width: 5px;
+    height: 10vh;
+    display: block;
+    background: #fff;
+    margin: -10px 0 0 20px;
+}
+svg.social-icon {
+    background: #fff;
+    border-radius: 51px;
+    border: 2px solid #fff;
+    transition: fill 0.5s;
+}
+svg.social-icon.beh-i:hover {
+    fill: #053eff;
+}
+svg.social-icon.fb-i:hover {
+    fill: #3a5794;
+}
+svg.social-icon.u-i:hover {
+    fill: #f70000;
+}
+.social li {
+    display: block;
+}
+.content{
+    background: #eeeeee;
+}
+.aboutme{
+    background-image: url(img/bg2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 225px;
+    position: relative;
+    margin-top: 10px;
+
+}
+.abutme-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 8px 25px 3px;
+    padding: 2px;
+    border: 2px solid #fff;
+    float: left;
+    position: absolute;
+    z-index: 9;
+}
+.ch-color{
+    color: #32e0c4;
+}
+.abutme-dis{
+    font-size: 26px;
+    line-height: 1.5;
+    margin: 50px 15px 0 250px;
+    position: absolute;
+    z-index: 9;
+
+}
+.big-title{
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+    padding: 15px 0;
+    background: #fff;
+    color: #222831;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.big-title:before {
+    content: "";
+    width: 40px;
+    height: 6px;
+    background: #0d7377;
+    display: inline-block;
+    margin: 11px 0 0 -50px;
+    position: absolute;
+}
+.big-title:after {
+    content: "";
+    width: 40px;
+    height: 6px;
+    background: #0d7377;
+    display: inline-block;
+    margin: 11px 0 0 8px;
+    position: absolute;
+}
+.item-content{
+    margin-top: 10px;
+    min-height: 845px;
+}
+.Experience-content{
+    background: #212121;
+    min-height: unset;
+
+}
+.title-ex{
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.html-con{
+    padding:10px 0 30px 10px ;
+}
+.code-color{
+    color: #32e0c4;
+}
+.class-color{
+    color: rgb(253, 128, 11);
+}
+.meter-html{
+    height: 50px;
+    width: 99%;
+    background-color: #32e0c4;
+    line-height: 50px;
+}
+.size-tx{
+    font-size: 18px;
+}
+.min-html{
+    height: 100%;
+    width: 35%;
+    background: #0d7377;
+    float: right;
+}
+.css-con{
+    padding:10px 0 30px 10px ;
+}
+.meter-css{
+    height: 50px;
+    width: 99%;
+    background-color: #32e0c4;
+    line-height: 50px;
+}
+.min-css{
+    height: 100%;
+    width: 20%;
+    background: #0d7377;
+    float: right;
+}
+.code-color-css{
+    color: #4385ff;
+}
+.Portfolio-content{
+    background: #fff;
+}
+.potfolio-item{
+    list-style: none;
+    position: relative;
+}
+.potfolio-item li {
+    width: 50%;
+    background: #32e0c4;
+    text-align: center;
+    padding: 0 0 20px 0;
+    position: absolute;
+    border: 1px solid #fff;
+
+}
+
+.item-content-2{
+    margin: 0 0 0 50%;
+}
+li.item-content-3 {
+    margin: 433px 0 0 0;
+}
+li.item-content-2.item-content-4 {
+    margin: 37% 0 0 50%;
+}
+.img-pro{
+    width: 98%;
+    margin-top: 1%;
+    min-height: 250px;
+}
+.title-pro {
+    text-transform: uppercase;
+    padding: 5px 0 25px 0;
+}
+.button-l {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #fff;
+    color: #222831;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.button-l:hover {
+    padding: 10px 25px;
+    opacity: 0.8;
+}
+.buy-pro{
+    margin-right: 10px;
+}
+svg.buy-icon,svg.live-icon{
+    margin: 0 5px -6px 0;
+    fill: #0d7377;
+}
+.contact-dis{
+    background: #0d7377;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 0
+}
+.co-bt{
+    background: #fff;
+    padding: 30px 10px;
+    display: block;
+    text-align: center;
+}
+.co-bts{
+    background: #0d7377;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 3px;
+    width: 100px;
+    font-weight: 600;
+}
+
+/* responsive */
+@media only screen and (max-width: 1400px) {
+    .social {
+        margin: 94vh 0 0 0;
+        background: #fff;
+    width: 100vw;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .social li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .social {
+        margin: 90vh 0 0 0;}
+    nav ul li {
+        width: 49%;
+    }
+    nav ul li a {
+        padding: 15px 10px;
+        margin: 0;
+    }
+    .hello {
+        font-size: 35px;
+    }
+    .my-name {
+        font-size: 40px;
+    }
+    .carer {
+        font-size: 20px;
+    }
+    .more-me-button {
+        margin: 55px auto 0;
+    }
+    img.abutme-img {
+        width: 70px;
+        height: 70px;
+    }
+    .aboutme {
+        min-height: 195px;
+    }
+    img.abutme-img {
+        width: 70px;
+        height: 70px;
+    }
+    .abutme-dis {
+        margin: 5px 15px 0 125px;
+        font-size: 20px;
+        position: inherit;
+    }
+    .potfolio-item li {
+        width: 100%;
+        border: 0;
+        position: inherit;
+        margin-bottom: 15px;
+    }
+    nav ul{
+        width: 100vw;
+    }
+    li.item-content-2 {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .carer:after , .carer:before {
+        width: 5vw;
+        margin: 16px 0 0 4vw;
+    }
+    .carer:before{width: 5vw;
+        margin: 16px 0 0 -10vw;
+    }
+    .hello {
+        font-size: 26px;
+    }
+    .my-name {
+        font-size: 30px;
+    }
+    .carer {
+        font-size: 16px;
+    }
+    .aboout-link {
+        font-size: 20px;
+    }
+    .big-title:after , .big-title::before{
+        display: none;
+    }
+
+}
